@@ -5,6 +5,10 @@
     <title>reasons to be alive</title>
     <style>
         body {
+            background-color: rgb(238, 238, 238);
+            color: rgb(54, 54, 54);
+        }
+        .backgroundEnable {
             background-color: rgb(54, 54, 54);
             color: rgb(238, 238, 238);
             background-image: url('https://st3.depositphotos.com/1008927/17380/i/450/depositphotos_173800808-stock-photo-seamless-starry-night-sky.jpg');
@@ -17,10 +21,12 @@
         .button:hover {
             box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
         }
+        a:link, a:visited, a:hover, a:active {color: rgb(238, 238, 238);}
     </style>
 </head>
-<body>
+<body onload="loader()">
     <center>
+        <a href="javascript:readability()">readability mode</a>
         <h1>reasons to stay alive</h1>
         In life<br><br>
         You can love.<br><br>
@@ -96,3 +102,13 @@
         I love you. <br><br>
     </center>
 </body>
+<script>
+    function loader() {
+        var element = document.body;
+        element.classList.toggle("backgroundEnable");
+    }
+    function readability() {
+        var element = document.body;
+        element.classList.toggle("backgroundEnable");
+    }
+</script>
